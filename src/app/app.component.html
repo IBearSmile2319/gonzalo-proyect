@@ -1,0 +1,30 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">ADISSEO</th>
+      <th scope="col">DUPONT</th>
+      <th scope="col">ELANCO</th>
+      <th scope="col">OLMIX</th>
+      <th scope="col">ZIMPRO</th>
+      <th scope="col">ZOETIZ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of datos">
+      <th scope="row">1</th>
+      <td>{{data.description}}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<!-- Total -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Total</h1>
+      <p>{{datos.length}}</p>
+    </div>
+  </div>
+</div>
